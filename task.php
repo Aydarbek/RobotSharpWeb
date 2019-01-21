@@ -11,11 +11,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-        <script src="js/php.TaskInfo.js"></script>
-        <script src="js/php.LangList.js"></script>
-        <script src="js/stuff.js"></script>
-        <script src="js/langs.js"></script>
-        <script src="js/run.task.js"></script>
         <title>Задача № $taskId : $title</title>
     </head>
     <body>	
