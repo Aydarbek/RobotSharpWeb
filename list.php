@@ -1,6 +1,6 @@
 <?php
-    $json = file_get_contents('http://robot-api/index.php?class=Task&method=getTaskList');
-    $tasks = json_decode($json)->tasks;
+    include 'call.php';
+    $tasks = call('Task', 'getTaskList')->tasks;
 
     include 'libs/Smarty.class.php';
     $smart = new Smarty();
