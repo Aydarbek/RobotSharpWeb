@@ -1,3 +1,7 @@
+<?php
+    $json = file_get_contents('http://robot-api/index.php?class=Task&method=getTaskList');
+    $tasks = json_decode($json)->tasks;
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -26,16 +30,20 @@
 					</tr> 
 				</thead>
 				<tbody>
+                <?php foreach ($tasks as $task) { ?>
 					<tr>
 						<td class="text-center">
-							<span class="badge badge-primary badge-pill">$taskId</span> 
+                            <a href="task.php?taskId=<?= $task->taskId ?>" title="Открыть условие">
+                                <span class="badge badge-primary badge-pill"><?= $task->taskId ?></span>
+                            </a>
 						</td>
 						<td>
-							<a href="task.html?taskId=$taskId" title="Открыть условие">
-								$title
+							<a href="task.php?taskId=<?= $task->taskId ?>" title="Открыть условие">
+                                <?= $task->title ?>
 							</a>
 						</td>
 					</tr>
+                <?php } ?>
 				</tbody>
 			</table>
 		</div>
