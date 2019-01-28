@@ -22,7 +22,7 @@
                 <button id="langButton" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Технология
                 </button>
-                <div class="dropdown-menu" id="langListItem">
+                <div class="dropdown-menu righted" id="langListItem">
                     {foreach from=$langs item=lang}
                         <a class="dropdown-item" href="prog.php?taskId={$task->taskId}&langId={$lang->langId}"
                         >{$lang->langText}</a>

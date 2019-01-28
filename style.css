@@ -33,9 +33,13 @@
 {
     border: 1px solid black;
 }
-.program{
+.program {
     background-color: black !important;
     color: white !important;
     font-family: monospace;
     font-size: 15px;
+}
+.righted {
+    right:0px;
+    left:auto;
 }
