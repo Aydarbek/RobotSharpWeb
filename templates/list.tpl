@@ -35,7 +35,7 @@
 						</td>
 						<td>
 							<a href="task.php?taskId={$task->taskId}" title="Открыть условие">
-                                {$task->title}
+                                {$task->caption}
 							</a>
 						</td>
 					</tr>
