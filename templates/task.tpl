@@ -11,13 +11,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-        <title>Задача № {$task->taskId} : {$task->title}</title>
+        <title>Задача № {$task->taskId} : {$task->caption}</title>
     </head>
     <body>
 		<div class="navbar mb-4 text-white bg-success">
             <span>
                 Условие задачи № {$task->taskId} ::
-                <strong>{$task->title}</strong>
+                <strong>{$task->caption}</strong>
             </span>
 			<div class="btn-group" style="float:right;">
 				<button id="langButton" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,7 +42,7 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="task-text">
-                                {$task->problem}
+                                {$task->description}
 							</div>
 						</div>
 					</div>
@@ -62,15 +62,15 @@
 					    <div class="card-header">
 						   Пример
 					    </div>
-					    <textarea id="testIn" class="form-control text-white bg-info" rows="5"
-                            >{$task->testIn}</textarea>
+					    <textarea id="fileIn" class="form-control text-white bg-info" rows="5"
+                            >{$task->fileIn}</textarea>
 					</div>
 					<div class="col-12 example">
 						<div class="card-header">
 							Результат
 						</div>
-						<textarea id="testOut" class="form-control text-white bg-success" rows="5"
-                            >{$task->testOut}</textarea>
+						<textarea id="fileOut" class="form-control text-white bg-success" rows="5"
+                            >{$task->fileOut}</textarea>
 					</div>
 				</div>
 			</div>
