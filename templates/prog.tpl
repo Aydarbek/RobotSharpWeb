@@ -25,7 +25,7 @@
                 <div class="dropdown-menu righted" id="langListItem">
                     {foreach from=$langs item=lang}
                         <a class="dropdown-item" href="prog.php?taskId={$task->taskId}&langId={$lang->langId}"
-                        >{$lang->langText}</a>
+                        >{$lang->lang}</a>
                     {/foreach}
                 </div>
             </div>

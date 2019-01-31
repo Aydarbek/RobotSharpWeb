@@ -1,6 +1,6 @@
 <?php
 
-define('HOST_API', 'http://robot-api/');
+define('HOST_API', 'http://RobotSharpApi/');
 
 function call($class, $method, $params = [])
 {
