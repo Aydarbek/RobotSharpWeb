@@ -1,4 +1,5 @@
 <?php
+    include 'vendor/autoload.php';
     include 'call.php';
     $task = call(
         'Task',
@@ -9,7 +10,6 @@
         'Task',
         'getLangList')->langs;
 
-    include 'libs/Smarty.class.php';
     $smart = new Smarty();
     $smart->assign('task', $task);
     $smart->assign('langs', $langs);

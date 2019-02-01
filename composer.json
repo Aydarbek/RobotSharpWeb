@@ -1,0 +1,14 @@
+{
+    "name": "fformula/robot-sharp-web",
+    "description": "Robot Sharp End User Website",
+    "type": "project",
+    "require": {
+        "smarty/smarty": "^3.1"
+    },
+    "authors": [
+        {
+            "name": "Jevgenij Volosatov",
+            "email": "fformula@gmail.com"
+        }
+    ]
+}
