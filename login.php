@@ -12,3 +12,7 @@
         die('Sign incorrect');
 
     session_start();
+
+    $_SESSION['email'] = $email;
+
+    echo $email . " accepted ";
