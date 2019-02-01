@@ -11,7 +11,7 @@
 
     $prog = call(
         'Task',
-        'getUserProgram',
+        'getUserSource',
         [
             'userId' => $_GET['userId'],
             'taskId' => $_GET['taskId'],

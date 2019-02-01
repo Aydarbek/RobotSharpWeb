@@ -33,8 +33,8 @@
 		<div class="container-fluid px-4">
 			<div class="row">
 				<div class="col-9 h-100">
-					<textarea id="program" class="program form-control height-100" rows="22"
-                        >{$prog->program}</textarea>
+					<textarea id="source" class="program form-control height-100" rows="22"
+                        >{$prog->source}</textarea>
 				</div>
 				<div class="col-3">
                     <a href="list.php" class="btn btn-danger btn-block mb-4" title=""><i class="fas fa-play"></i>&nbsp;Запуск</a>
@@ -55,16 +55,16 @@
                             <a href="#"><span class="badge badge-success badge-pill">8</span></a>
                             <a href="#"><span class="badge badge-success badge-pill">9</span></a>
                         </div>
-                        <textarea id="testIn" class="form-control text-white bg-info" rows="5"
-                        >{$task->testIn}</textarea>
+                        <textarea id="fileIn" class="form-control text-white bg-info" rows="5"
+                        >{$task->fileIn}</textarea>
                     </div>
                     <div class="col-12 example">
                         <div class="card-header">
                             <a href="#"><span class="badge badge-success badge-pill">0</span></a>
                             Результат
                         </div>
-                        <textarea id="testOut" class="form-control text-white bg-danger" rows="5"
-                        >{$task->testOut}</textarea>
+                        <textarea id="fileOut" class="form-control text-white bg-danger" rows="5"
+                        >{$task->fileOut}</textarea>
                     </div>
 				</div>
 			</div>
