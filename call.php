@@ -1,6 +1,6 @@
 <?php
 
-define('HOST_API', 'http://RobotSharpApi/');
+define('HOST_API', 'http://robot-api/');
 
 function call($class, $method, $params = [])
 {
@@ -14,5 +14,7 @@ function call($class, $method, $params = [])
     $json = file_get_contents($url);
     $obj = json_decode($json);
     echo "<!-- get $url\n" . var_export($obj, true) . " -->";
-    return $obj;
+    if ($obj->error == 'ok')
+        return $obj->answer;
+    die ($obj->error);
 }

@@ -3,12 +3,12 @@
     include 'call.php';
     $task = call(
         'Task',
-        'getTaskInfo',
-        ['taskId' => $_GET['taskId']])->task;
+        'getTask',
+        ['taskId' => $_GET['taskId']]);
 
     $langs = call(
         'Task',
-        'getLangList')->langs;
+        'getLangList');
 
     $smart = new Smarty();
     $smart->assign('task', $task);

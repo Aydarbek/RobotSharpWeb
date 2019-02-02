@@ -3,21 +3,21 @@
     include 'call.php';
     $task = call(
         'Task',
-        'getTaskInfo',
-        ['taskId' => $_GET['taskId']])->task;
+        'getTask',
+        ['taskId' => $_GET['taskId']]);
 
     $langs = call(
         'Task',
-        'getLangList')->langs;
+        'getLangList');
 
     $prog = call(
         'Task',
-        'getUserSource',
+        'getProg',
         [
             'userId' => $_GET['userId'],
             'taskId' => $_GET['taskId'],
             'langId' => $_GET['langId']
-        ])->prog;
+        ]);
 
     $smart = new Smarty();
     $smart->assign('task', $task);
