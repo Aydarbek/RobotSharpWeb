@@ -3,7 +3,14 @@
     include 'vendor/autoload.php';
     include 'call.php';
 
-    $user = call('User', 'joinUser', $_GET)->user;
-    $_SESSION['user'] = $user;
+    $login = call('Login', 'getToken', $_GET);
 
-    print_r($user);
+
+?>
+<pre>
+<?php    print_r($login); ?>
+
+    Сайт находится в разработкуе до 10 февраля 2019 года.
+    Список задач для конкурса можете посмотреть на странице
+    <a href="https://www.videosharp.info/console/book">https://www.videosharp.info/console/book</a>
+</pre>
