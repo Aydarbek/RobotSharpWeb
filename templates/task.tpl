@@ -42,7 +42,7 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="task-text">
-                                {$task->description}
+                                <pre>{$task->description}</pre>
 							</div>
 						</div>
 					</div>
