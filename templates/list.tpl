@@ -22,7 +22,8 @@
 				<thead class="thead-dark">
 					<tr>
 						<th class="text-center">№</th>
-						<th>Название задачи</th>
+                        <th>Раздел</th>
+                        <th>Задача</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -33,11 +34,14 @@
                                 <span class="badge badge-primary badge-pill">{$task->taskId}</span>
                             </a>
 						</td>
-						<td>
-							<a href="task.php?taskId={$task->taskId}" title="Открыть условие">
+                        <td>
+                            {$task->sector}
+                        </td>
+                        <td>
+                            <a href="task.php?taskId={$task->taskId}" title="Открыть условие">
                                 {$task->caption}
-							</a>
-						</td>
+                            </a>
+                        </td>
 					</tr>
                 {/foreach}
 				</tbody>

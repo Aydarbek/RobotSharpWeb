@@ -1,6 +1,6 @@
 <?php
 
-define('HOST_API', 'https://www.robotsharp.info/api/');
+include_once 'config.php';
 
 function call($class, $method, $params = [])
 {
